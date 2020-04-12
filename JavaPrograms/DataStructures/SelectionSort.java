@@ -14,12 +14,10 @@ public class SelectionSort {
 		int indexOfSortedArray = givenArray.length - 1;
 		while(indexOfSortedArray > 0) {
 			int largestElementIndex = 0;
-			int largestElement = givenArray[0];
 			for(int i=1;i<=indexOfSortedArray;i++)
 			{
-				if(givenArray[i] > largestElement) {
+				if(givenArray[i] > givenArray[largestElementIndex]) {
 					largestElementIndex = i;
-					largestElement = givenArray[i];
 				}
 			}
 			int temp = givenArray[largestElementIndex];		
@@ -38,12 +36,10 @@ public class SelectionSort {
 		int indexOfSortedArray = 0;
 		while(indexOfSortedArray < givenArray.length -1) {
 			int smallestElementIndex = givenArray.length -1;
-			int smallestElement = givenArray[givenArray.length -1];
-			for(int i=givenArray.length -2;i<=indexOfSortedArray;i++)
+			for(int i=givenArray.length -1;i>=indexOfSortedArray;i--)
 			{
-				if(givenArray[i] < smallestElement) {
+				if(givenArray[i] < givenArray[smallestElementIndex]) {
 					smallestElementIndex = i;
-					smallestElement = givenArray[i];
 				}
 			}
 			int temp = givenArray[smallestElementIndex];		
