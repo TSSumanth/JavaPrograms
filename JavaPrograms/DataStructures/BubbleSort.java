@@ -4,7 +4,7 @@ public class BubbleSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] unsortedArray = {10,29,-20,1234,787,324,1,35 };
+		int[] unsortedArray = {10,29,-20,1,1,1234,787,324,1,35 };
 		BubbleSortDescSmallestToRight(unsortedArray);
 	}
 	
